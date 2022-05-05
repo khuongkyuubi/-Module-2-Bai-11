@@ -1,0 +1,15 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var Patient_1 = require("./Patient");
+var PriorityQueue_1 = require("./PriorityQueue");
+var patient1 = new Patient_1.Patient("Smith", 5);
+var patient2 = new Patient_1.Patient("Jones", 4);
+var patient3 = new Patient_1.Patient("Fehrenbach", 6);
+var patient4 = new Patient_1.Patient("Brown", 1);
+var patient5 = new Patient_1.Patient("Ingram", 1);
+var priorityQueue = new PriorityQueue_1.PriorityQueue();
+priorityQueue.enqueue(patient1, patient2, patient3, patient4, patient5);
+priorityQueue.show();
+priorityQueue.sort();
+priorityQueue.show();
+priorityQueue.check();
