@@ -1,8 +1,8 @@
 import {Stack} from "./Stack";
 import {Queue} from "./Queue";
 
-const stack = new Stack();
-const queue = new Queue();
+const stack = new Stack<string>();
+const queue = new Queue<string>();
 
 let str = "able was I ere I saw elba";
 
@@ -23,11 +23,11 @@ if (stack.size() === queue.size()) {
     if (flag) {
         console.log(str, " : Là chuỗi đối xứng");
     } else {
-        console.log("Error!!")
+        console.log(str, " : Không là chuỗi đối xứng");
     }
 
 
 } else {
-    console.log(str, " : Không là chuỗi đối xứng");
+    console.log("Error!!!");
 }
 

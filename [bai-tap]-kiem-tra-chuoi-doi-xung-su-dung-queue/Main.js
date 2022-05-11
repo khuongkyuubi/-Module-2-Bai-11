@@ -22,9 +22,9 @@ if (stack.size() === queue.size()) {
         console.log(str, " : Là chuỗi đối xứng");
     }
     else {
-        console.log("Error!!");
+        console.log(str, " : Không là chuỗi đối xứng");
     }
 }
 else {
-    console.log(str, " : Không là chuỗi đối xứng");
+    console.log("Error!!!");
 }
